@@ -1,4 +1,4 @@
-# unmute <img src="./images/pink_mic_square.png" alt="unmute icon" width="100">
+# unmute <img src="./images/icons/pink_mic_square.png" alt="unmute icon" width="100">
 
 ##### By **Christabel E. Sebastian** 
 ###### _See file headers for date of last update._
