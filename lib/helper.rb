@@ -11,6 +11,8 @@ module Helper
   private
 
 
+
+
   def self.check_response(response)
     if response.code != 200 || response["ok"] != true
       #todo: check Postman for request response -- does endpoint url exist in header? if so, string interpolate in the below error message -- perhaps with built-in HTTParty::Response method #request

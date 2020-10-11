@@ -39,6 +39,10 @@ class User
     end
   end
 
+  def self.get_user
+
+  end
+
   private
 
 

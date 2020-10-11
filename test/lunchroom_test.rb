@@ -27,8 +27,9 @@ describe "Lunchroom class" do
   end
 
   describe ".load_users" do
+
     before do
-      VCR.use_cassette("load user list") do
+      VCR.use_cassette("load member and user list") do
         @new_lunchroom = Lunchroom.new
         @new_lunchroom.load_users
       end
@@ -36,20 +37,24 @@ describe "Lunchroom class" do
 
     it "populates the @users instance variable" do
       expect(@new_lunchroom.users).wont_be_empty
-      expect(@new_lunchroom
     end
+
   end
 
-  describe ".get_user_list" do
-    it "calls Slack API users.list" do
-      VCR.use_cassette("load user list") do
-        response = User.list_all
+  describe ".load_unmute_bot" do
 
-        expect(response).must_be_instance_of HTTParty::Response
-        expect(response.body).wont_be_nil
-        expect(response["ok"]).must_equal true
+    before do
+      VCR.use_cassette("load member and user list") do
+        @new_lunchroom = Lunchroom.new
+        @new_lunchroom.load_unmute_bot
       end
     end
+
+    it "populates the @unumute_bot instance variable" do
+      expect(@new_lunchroom.unmute_bot).wont_be_empty
+    end
+
   end
+
 
 end
