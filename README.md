@@ -1,5 +1,4 @@
-
-# <img src="./images/pink_mic_square.png" alt="unmute icon" width="100"> unmute
+# unmute <img src="./images/pink_mic_square.png" alt="unmute icon" width="100">
 
 ##### By **Christabel E. Sebastian** 
 ###### _See file headers for date of last update._
@@ -17,9 +16,9 @@ Installation and Use
 * Add `unmute` as an app in your [Slack](https://slack.com/) workspace
 * Create a channel named `#unmute` and add users.
 * Upon joining `#unmute`, each user can choose whether they would like to have lunch in a pair (2 people) or a small group (3-4 people).
-    * At any time, a user can reply to their welcome message and enter `\raincheck` to change their status to inactive. While "rainchecked", the user will not be added to any Table. 
-    * The user can enter `\
-* Each user will receive a Direct Message on Monday morning with information regarding that week's pair or group.
+    * At any time, a user can reply to their welcome message and enter `\raincheck` to change their status to Inactive. While "rainchecked", the user will not be added to any Table. 
+    * The user can enter `\connect` to set their status to Active. 
+* Each Active user will receive a Direct Message on Monday morning with information regarding that week's pair or group.
 
 Known Bugs
 -----------
