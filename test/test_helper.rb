@@ -4,7 +4,7 @@ SimpleCov.start do
 end
 require 'minitest/reporters'
 require 'minitest/autorun'
-require 'minitest/skip'
+require 'minitest/skip_dsl'
 require 'minitest/pride'
 require "vcr"
 require "webmock/minitest"
